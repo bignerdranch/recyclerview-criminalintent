@@ -59,6 +59,7 @@ private class MyViewHolder extends SwappingHolder
 
     public MyViewHolder(View itemView) {
         super(itemView, mMultiSelector); // (2)
+        itemView.setOnLongClickListener(this);
         itemView.setLongClickable(true);
     }
 
@@ -84,6 +85,7 @@ private class MyViewHolder extends SwappingHolder
 
     public MyViewHolder(View itemView) {
         super(itemView, mMultiSelector);
+        itemView.setOnClickListener(this);
     }
 
     @Override
